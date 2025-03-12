@@ -16,8 +16,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.logilink.ui.ChatScreen
+import com.example.logilink.ui.OrderManagementScreen
 import com.example.logilink.ui.OverviewTab
 import com.example.logilink.ui.SideMenu
+import com.example.logilink.ui.SupplyChainTab
 import com.example.logilink.ui.theme.LogiLinkTheme
 import kotlinx.coroutines.launch
 
@@ -78,9 +81,9 @@ fun DashboardScreen() {
                 }
                 when (selectedTab) {
                     0 -> OverviewTab()
-//                    1 -> SupplyChainTab()
-//                    2 -> MessagesTab()
-//                    3 -> OrdersTab()
+                    1 -> SupplyChainTab()
+                    2 -> ChatScreen()
+                    3 -> OrderManagementScreen()
                 }
             }
         }
